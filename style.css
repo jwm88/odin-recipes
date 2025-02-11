@@ -1,11 +1,89 @@
-* {
+/* Global Reset & Best Practices */
+:root {
+  --bg-color: #ffd65a;
+  --text-color: #16c47f;
+  --hover-color: #ff9d23;
+  --font-primary: "Impact", Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-primary);
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+/* Headings */
+h1 {
+  text-shadow: 1px 1px 1px var(--hover-color), 2px 20px 2px var(--hover-color);
+  margin-bottom: 18px;
+}
+
+/* Lists */
+ol,
+ul {
+  margin: 1em 0;
+  padding-left: 40px;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+/* * {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-color: #ffd65a;
   color: #16c47f;
-  text-shadow: 1px 1px 2px #ff9d23;
-  outline: 2px solid red;
+  box-sizing: border-box;
 }
 
 a:hover {
   color: #ff9d23;
 }
+
+h1 {
+  text-shadow: 1px 1px 1px #ff9d23, 2px 20px 2px #ff9d23;
+  margin-bottom: 18px;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+} */
