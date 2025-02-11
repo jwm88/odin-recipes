@@ -3,6 +3,7 @@
   background-color: #ffd65a;
   color: #16c47f;
   text-shadow: 1px 1px 2px #ff9d23;
+  outline: 2px solid red;
 }
 
 a:hover {
