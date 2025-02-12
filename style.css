@@ -2,7 +2,8 @@
 :root {
   --bg-color: #ffd65a;
   --text-color: #16c47f;
-  --hover-color: #ff9d23;
+  --hover-color: transparent;
+  --shadow-color: #ff9d23;
   --font-primary: "Impact", Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
@@ -23,17 +24,21 @@ body {
 
 /* Links */
 a {
-  text-decoration: none;
+  background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 255, 0));
+  -webkit-background-clip: text;
+  background-clip: transparent;
   transition: color 0.2s ease-in-out;
+  color: var(--text-color);
 }
 
 a:hover {
   color: var(--hover-color);
+  text-shadow: 1px 1px 0px black;
 }
 
 /* Headings */
 h1 {
-  text-shadow: 1px 1px 1px var(--hover-color), 2px 20px 2px var(--hover-color);
+  text-shadow: 1px 1px 1px var(--shadow-color), 2px 20px 2px var(--shadow-color);
   margin-bottom: 18px;
 }
 
